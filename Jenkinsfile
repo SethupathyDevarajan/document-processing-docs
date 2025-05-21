@@ -16,12 +16,12 @@ String platform='file-formats';
 	    dir('Spell-Checker') 
            {
 		     checkout scm
-			 
-			 def branchCommit = 'https://api.github.com/repos/syncfusion-content/'+env.githubSourceRepoHttpUrl.split('/')[env.githubSourceRepoHttpUrl.split('/').size() - 1]+'/pulls/' + env.pullRequestId + '/files'
+def branchCommit = 'https://gitea.syncfusion.com/api/v1/repos/syncfusion-content/'+env.githubSourceRepoHttpUrl.split('/')[env.githubSourceRepoHttpUrl.split('/').size() - 1]+'/pulls/' + env.pullRequestId + '/files'
              
-            String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
+            
+String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/json" -u Syncfusion-Gitea:' + env.GiteaBuildAutomation_PrivateToken + " " + branchCommit
 
-            def ChangeFiles= branchCommitDetails.split('"filename": ');
+            def ChangeFiles= branchCommitDetails.split('"filename":');
 
             for (int i= 1; i < ChangeFiles.size();i++)
             {
@@ -39,7 +39,7 @@ String platform='file-formats';
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
-	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
+	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.GiteaCredentialID, url: 'https://gitea.syncfusion.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
 	}
