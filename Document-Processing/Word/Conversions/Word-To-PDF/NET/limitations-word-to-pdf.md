@@ -1,20 +1,20 @@
 ---
-title: Unsupported elements in Word to PDF Conversion | DocIO | Syncfusion
-description: Learn about the unsupported elements in Word to PDF conversion in C# using the .NET Word (DocIO) library.
+title: Limitations in Word to PDF Conversion | DocIO | Syncfusion
+description: Learn about the limitations in Word to PDF conversion in C# using the .NET Word (DocIO) library.
 platform: document-processing
 control: DocIO
 documentation: UG
 ---
 
-# Unsupported elements in Word to PDF Conversion
+# Limitations in Word to PDF Conversion
 
-The following table shows the unsupported elements of Word to PDF conversion.
+The following tables shows the limitations of Word to PDF conversion.
 
 <table>
 <thead> 
 <tr>
-<th>Element</th>
-<th>Unsupported elements</th>
+<th>Document Element</th>
+<th>Limitation</th>
 </tr>
 </thead>
 <tr>
@@ -35,22 +35,6 @@ Only DOCX and WordML format documents are supported from .NET Framework 4.0 onwa
 </tr>
 <tr>
 <td>
-Table Styles
-</td>
-<td>
-Only DOCX and WordML format documents are supported.
-</td>
-</tr>
-<tr>
-<td>
-Pagination
-</td>
-<td>
-The Essential<sup>&reg;</sup> DocIO makes sensible decision when layout the text, and its supported elements while generating the PDF documents. But however, there may not be guaranteed pagination with all the documents.
-</td>
-</tr>
-<tr>
-<td>
 Grouped Shapes
 </td>
 <td>
@@ -67,22 +51,6 @@ Only DrawingML custom shapes in DOCX and WordML format documents are supported.
 </tr>
 <tr>
 <td>
-Fit Text – Table cell
-</td>
-<td>
-Not supported
-</td>
-</tr>
-<tr>
-<td>
-Vertical Alignment of the section
-</td>
-<td>
-Not supported
-</td>
-</tr>
-<tr>
-<td>
 Equation
 </td>
 <td>
@@ -94,7 +62,7 @@ Mathematical equations extending to multiple lines will be rendered in a single 
 SmartArt
 </td>
 <td>
-Not supported
+Supported only in DOCX format document to PDF
 </td>
 </tr>
 <tr>
@@ -123,6 +91,63 @@ Multi-Column text positions are calculated dynamically when layout the text. So,
 </tr>
 <tr>
 <td>
+Footnote and endnote
+</td>
+<td>
+Number formats in Roman, Alphabets, and Arabic only supported.
+</td>
+</tr>
+<tr>
+<td>
+Textbox
+</td>
+<td>
+Linked text boxes are not supported.
+</td>
+</tr>
+</table>
+
+<table>
+<thead> 
+<tr>
+<th>Formatting</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tr>
+<td>
+Table Styles
+</td>
+<td>
+Only DOCX and WordML format documents are supported.
+</td>
+</tr>
+<tr>
+<td>
+Pagination
+</td>
+<td>
+The Essential<sup>&reg;</sup> DocIO makes sensible decision when layout the text, and its supported elements while generating the PDF documents. But however, there may not be guaranteed pagination with all the documents.
+</td>
+</tr>
+<tr>
+<td>
+Fit Text – Table cell
+</td>
+<td>
+Not supported
+</td>
+</tr>
+<tr>
+<td>
+Vertical Alignment of the section
+</td>
+<td>
+Not supported
+</td>
+</tr>
+<tr>
+<td>
 Borders
 </td>
 <td>
@@ -139,22 +164,6 @@ Text wrapping break is not supported.
 </tr>
 <tr>
 <td>
-Footnote and endnote
-</td>
-<td>
-Number formats in Roman, Alphabets, and Arabic only supported.
-</td>
-</tr>
-<tr>
-<td>
-Textbox
-</td>
-<td>
-Linked text boxes are not supported.
-</td>
-</tr>
-<tr>
-<td>
 Font kerning
 </td>
 <td>
@@ -162,6 +171,12 @@ Partially supported. At present, the text in a line is scaled uniformly to match
 </td>
 </tr>
 </table>
+
+## SmartArt limitations in Word to PDF & image conversions
+
+SmartArt typically contains graphic properties, including bounds information for SmartArt and its nodes. When creating or modifying SmartArt using the Syncfusion Word Library, these graphic properties (e.g., bounds information) are not generated. Due to this limitation, SmartArt created or modified using the Syncfusion Word Library may not be accurately preserved during Word-to-PDF and image conversions.
+
+**To resolve this**, first save the document using DocIO before converting it to a PDF or image. Then, open the saved document in Microsoft Word, save it again, and finally convert it to a PDF or image using DocIO. This regenerates the required SmartArt properties, ensuring accurate output.
 
 ## Show Warning for Unsupported Elements
 

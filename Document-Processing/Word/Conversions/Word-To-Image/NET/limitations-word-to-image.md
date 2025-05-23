@@ -1,0 +1,179 @@
+---
+title: Limitations in Word to Image Conversion | DocIO | Syncfusion
+description: Learn about the limitations in Word to Image conversion in C# using the .NET Word (DocIO) library.
+platform: document-processing
+control: DocIO
+documentation: UG
+---
+
+# Limitations in Word to Image Conversion
+
+The following tables shows the limitations of Word to Image conversion.
+
+<table>
+<thead> 
+<tr>
+<th>Document Element</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tr>
+<td>
+Predefined shapes
+</td>
+<td>
+Only DOCX and WordML format documents are supported.
+</td>
+</tr>
+<tr>
+<td>
+Chart
+</td>
+<td>
+Only DOCX and WordML format documents are supported from .NET Framework 4.0 onwards.
+</td>
+</tr>
+<tr>
+<td>
+Grouped Shapes
+</td>
+<td>
+Only DOCX and WordML format documents are supported.
+</td>
+</tr>
+<tr>
+<td>
+Custom Shapes 
+</td>
+<td>
+Only DrawingML custom shapes in DOCX and WordML format documents are supported.
+</td>
+</tr>
+<tr>
+<td>
+Equation
+</td>
+<td>
+Mathematical equations extending to multiple lines will be rendered in a single line and content exceeding the right margin will clip in the image.
+</td>
+</tr>
+<tr>
+<td>
+SmartArt
+</td>
+<td>
+Supported only in DOCX format document to image.
+</td>
+</tr>
+<tr>
+<td>
+WordArt
+</td>
+<td>
+Not supported
+</td>
+</tr>
+<tr>
+<td>
+Watermark
+</td>
+<td>
+First watermark of the Word document should be applied to the entire converted PDF document when the Word document have multiple watermarks.
+</td>
+</tr>
+<tr>
+<td>
+Multi-Column Texts
+</td>
+<td>
+Multi-Column text positions are calculated dynamically when layout the text. So, there may be some content position differences occur in the image.
+</td>
+</tr>
+<tr>
+<td>
+Footnote and endnote
+</td>
+<td>
+Number formats in Roman, Alphabets, and Arabic only supported.
+</td>
+</tr>
+<tr>
+<td>
+Textbox
+</td>
+<td>
+Linked text boxes are not supported.
+</td>
+</tr>
+</table>
+
+<table>
+<thead> 
+<tr>
+<th>Formatting</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tr>
+<td>
+Table Styles
+</td>
+<td>
+Only DOCX and WordML format documents are supported.
+</td>
+</tr>
+<tr>
+<td>
+Pagination
+</td>
+<td>
+The Essential<sup>&reg;</sup> DocIO makes sensible decision when layout the text, and its supported elements while generating the PDF documents. But however, there may not be guaranteed pagination with all the documents.
+</td>
+</tr>
+<tr>
+<td>
+Fit Text – Table cell
+</td>
+<td>
+Not supported
+</td>
+</tr>
+<tr>
+<td>
+Vertical Alignment of the section
+</td>
+<td>
+Not supported
+</td>
+</tr>
+<tr>
+<td>
+Borders
+</td>
+<td>
+Using of patterns and 3D borders are not retained in the output image.
+</td>
+</tr>
+<tr>
+<td>
+Break – Page break, column break and Line break
+</td>
+<td>
+Text wrapping break is not supported.
+</td>
+</tr>
+<tr>
+<td>
+Font kerning
+</td>
+<td>
+Partially supported. At present, the text in a line is scaled uniformly to match the width of kerned text, instead of adjusting the space between each pair of characters.
+</td>
+</tr>
+</table>
+
+## SmartArt limitations in Word to PDF & image conversions
+
+SmartArt typically contains graphic properties, including bounds information for SmartArt and its nodes. When creating or modifying SmartArt using the Syncfusion Word Library, these graphic properties (e.g., bounds information) are not generated. Due to this limitation, SmartArt created or modified using the Syncfusion Word Library may not be accurately preserved during Word-to-PDF and image conversions.
+
+**To resolve this**, first save the document using DocIO before converting it to a PDF or image. Then, open the saved document in Microsoft Word, save it again, and finally convert it to a PDF or image using DocIO. This regenerates the required SmartArt properties, ensuring accurate output.
