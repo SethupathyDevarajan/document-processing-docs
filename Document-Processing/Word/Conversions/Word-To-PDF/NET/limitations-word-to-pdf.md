@@ -170,6 +170,30 @@ Font kerning
 Partially supported. At present, the text in a line is scaled uniformly to match the width of kerned text, instead of adjusting the space between each pair of characters.
 </td>
 </tr>
+<tr>
+<td>
+Transparency and Pattern fill in shapes
+</td>
+<td>
+Supported only in DOCX format during Word to PDF conversion.
+</td>
+</tr>
+<tr>
+<td>
+Recolor picture
+</td>
+<td>
+Supported only in DOCX format during Word to PDF conversion.
+</td>
+</tr>
+<tr>
+<td>
+Gradient fill in Shapes
+</td>
+<td>
+Supported only in DOCX format. Rectangular and Path gradient types are not supported in PDF conversions in ASP.NET Core, Blazor, WinUI, .NET MAUI, and Xamarin platforms. These are currently rendered as Radial gradients.
+</td>
+</tr>
 </table>
 
 ## SmartArt limitations in Word to PDF & image conversions
