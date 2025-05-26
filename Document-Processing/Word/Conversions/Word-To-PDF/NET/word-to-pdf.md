@@ -175,10 +175,6 @@ In Linux OS, you can perform the Word to PDF conversion using .NET Core (Targeti
 
 The Essential<sup>&reg;</sup> DocIO provides settings while performing Word to PDF conversion mentioned below, 
 
-### Fast rendering
-
-This setting allows you to **convert PDF faster** by using direct PDF rendering approach rather than EMF rendering approach. For further information, click [here](https://help.syncfusion.com/document-processing/word/conversions/word-to-pdf/net/word-to-pdf-settings#fast-rendering).
-
 ### Embedding fonts
 
 You can customize the TrueType fonts embedding in two ways as follows:
