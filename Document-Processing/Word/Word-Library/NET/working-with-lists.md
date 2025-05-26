@@ -109,6 +109,9 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **Bullet List** as shown below.
+![List](Lists_images/CreateBulletedList.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/Simple-bulleted-list).
 
 ## Create Numbered List
@@ -207,9 +210,12 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **Numbered List** as shown below.
+![List](Lists_images/CreateNumberedList.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/Simple-numbered-list).
 
-## Create Multilevel List
+## Create Multilevel Bulleted List
 
 The following code example explains how to create a multilevel bulleted list.
 
@@ -316,6 +322,9 @@ document.Close()
 {% endhighlight %}
 
 {% endtabs %}
+
+By running the above code, you will generate a **Multilevel Bullet List** as shown below.
+![List](Lists_images/MultilevelBulletList.png)
 
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/Multilevel-bulleted-list).
 
@@ -427,11 +436,14 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **Multilevel Numbered List** as shown below.
+![List](Lists_images/MultilevelNumberedList.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/Multilevel-numbered-list).
 
 ## List number format
 
-The ListPatternType enum in DocIO lets you customize how list numbers appear in Word documents. It supports 61 styles, including English, Japanese, Korean, Chinese, Russian, Hindi, and more. This is useful for creating region-specific documents or applying culturally appropriate numbering formats.
+The ListPatternType enum in DocIO lets you customize how list numbers appear in Word documents. It supports 61 styles, including Arabic, Hebrew, and more. This is useful for creating region-specific documents or applying culturally appropriate numbering formats.
 
 The following code example demonstrates how to create a list number format.
 
@@ -704,6 +716,9 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **List Numbered Format** as shown below.
+![List](Lists_images/ListNumberFormat.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs).
 
 ## Customize List
@@ -971,6 +986,9 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **Increase or Decrease List indent** as shown below.
+![List](Lists_images/ChangeListLevels.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/Increase-or-decrease-list-indent).
 
 ## Bulleted List Styles
@@ -1131,6 +1149,9 @@ document.Close()
 {% endhighlight %}
 
 {% endtabs %} 
+
+By running the above code, you will generate a **Bulleted List Styles** as shown below.
+![List](Lists_images/BulletListStyles.png)
 
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/User-defined-bulleted-list).
 
@@ -1295,6 +1316,9 @@ document.Close()
 
 {% endtabs %}
 
+By running the above code, you will generate a **Numbered List with Prefix** as shown below.
+![List](Lists_images/NumberedListwithPrefix.png)
+
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Paragraphs/List-with-prefix-from-previous-level).
 
 ## Get List Value
@@ -1357,9 +1381,7 @@ N> For a picture bulleted list, the [ListString](https://help.syncfusion.com/cr/
 * [How to find list of used fonts in the Word document](https://support.syncfusion.com/kb/article/11334/how-to-find-list-of-used-fonts-in-the-word-document)
 * [How to resize list character in a Word document?](https://support.syncfusion.com/kb/article/12327/how-to-resize-list-character-in-a-word-document)
 * [How to retrieve list values for a specific heading in a Word document](https://support.syncfusion.com/kb/article/17713/how-to-retrieve-list-values-for-a-specific-heading-in-a-word-document)
-* [How to change the font for specific content in a Word document](https://support.syncfusion.com/kb/article/17788/how-to-change-the-font-for-specific-content-in-a-word-document)
 * [How to apply a left indent to the imported content after the list paragraph in a Word document](https://support.syncfusion.com/kb/article/17544/how-to-apply-a-left-indent-to-the-imported-content-in-core-docio)
-* [How to expand and collapse content based on headings in a Word document](https://support.syncfusion.com/kb/article/17837/how-to-expand-and-collapse-content-based-on-headings-in-a-word-document) 
 * [How to apply continuous list numbering when merging two documents with different list styles](https://support.syncfusion.com/kb/article/17848/how-to-apply-continuous-list-numbering-when-merging-two-documents-with-different-list-styles)
 * [How to restart numbering when replacing multiple texts with the same HTML list in Word document?](https://support.syncfusion.com/kb/article/19665/how-to-restart-numbering-when-replacing-multiple-texts-with-the-same-html-list-in-word-document)
 * [How to create a list with a hanging indent in a Word document?](https://support.syncfusion.com/kb/article/19649/how-to-create-a-list-with-a-hanging-indent-in-a-word-document)
