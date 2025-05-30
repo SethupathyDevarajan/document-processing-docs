@@ -391,8 +391,8 @@ No<br/><br/></td></tr>
 Drawing Canvas<br/><br/></td><td>
 No<br/><br/></td><td>
 No<br/><br/></td><td>
-DOCX format only<br/><br/></td><td>
-DOCX format only<br/><br/></td><td>
+DOCX format only. Additional behavior explained [here]().<br/><br/></td><td>
+DOCX format only. Additional behavior explained [here]().<br/><br/></td><td>
 No<br/><br/></td><td>
 No<br/><br/></td></tr>
 <tr>
@@ -451,9 +451,6 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </tbody>
 </table>
-
-N> Creating, editing, or cloning Drawing Canvas elements programmatically is not supported. These elements are not included in Find and Replace functionality or document comparison. Additionally, when opening Word 2003 or 2007 DOCX documents, the Drawing Canvas is treated as a group shape.
-
 
 ### Paragraph features
 
