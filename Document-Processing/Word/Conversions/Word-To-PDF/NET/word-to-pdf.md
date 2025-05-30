@@ -158,7 +158,7 @@ The .NET Word Library (DocIO) supports below formats to convert into PDF.
 * Markdown 
 * HTML 
 
-N> To see limitations and unsupported features in Word to PDF conversion, refer [here](document-processing/word/conversions/word-to-pdf/net/limitations-word-to-pdf).
+N> To see limitations and unsupported features in Word to PDF conversion, refer [here](https://help.syncfusion.com/document-processing/word/conversions/word-to-pdf/net/unsupported-elements-word-to-pdf).
 
 ## Word to PDF conversion in Linux OS
 

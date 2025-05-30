@@ -62,7 +62,7 @@ Mathematical equations extending to multiple lines will be rendered in a single 
 SmartArt
 </td>
 <td>
-Supported only in DOCX format document to PDF
+Supported only in DOCX format document to PDF. Additional behavior explained [here]().
 </td>
 </tr>
 <tr>
@@ -196,11 +196,19 @@ Supported only in DOCX format. Rectangular and Path gradient types are not suppo
 </tr>
 </table>
 
-## SmartArt limitations in Word to PDF & image conversions
+## Detailed limitations
+
+Some elements have additional limitations or require manual steps to ensure accurate conversion results. These are detailed below:
+
+### SmartArt
 
 SmartArt typically contains graphic properties, including bounds information for SmartArt and its nodes. When creating or modifying SmartArt using the Syncfusion Word Library, these graphic properties (e.g., bounds information) are not generated. Due to this limitation, SmartArt created or modified using the Syncfusion Word Library may not be accurately preserved during Word-to-PDF and image conversions.
 
 **To resolve this**, first save the document using DocIO before converting it to a PDF or image. Then, open the saved document in Microsoft Word, save it again, and finally convert it to a PDF or image using DocIO. This regenerates the required SmartArt properties, ensuring accurate output.
+
+### Drawing Canvas
+
+Creating, editing, or cloning Drawing Canvas elements programmatically is not supported. These elements are not included in Find and Replace functionality or document comparison. Additionally, when opening Word 2003 or 2007 DOCX documents, the Drawing Canvas is treated as a group shape.
 
 ## Show Warning for Unsupported Elements
 
