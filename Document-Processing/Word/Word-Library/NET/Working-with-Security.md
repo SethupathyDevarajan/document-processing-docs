@@ -568,8 +568,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Remove-editable-range).
-
 An editable range at a specific index can also be removed from the **EditableRangeCollection** using the **RemoveAt** method.
 
 The following code example demonstrates how to remove an editable range at particular index from a Word document.
