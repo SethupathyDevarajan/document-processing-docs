@@ -62,7 +62,7 @@ Mathematical equations extending to multiple lines will be rendered in a single 
 SmartArt
 </td>
 <td>
-Supported only in DOCX format document to PDF. Additional behavior explained [here]().
+Supported only in DOCX format document to PDF. Additional behavior explained [here](https://help.syncfusion.com/document-processing/word/conversions/word-to-pdf/net/unsupported-elements-word-to-pdf#smartart).
 </td>
 </tr>
 <tr>
