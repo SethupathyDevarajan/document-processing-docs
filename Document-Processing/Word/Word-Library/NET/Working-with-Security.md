@@ -291,7 +291,7 @@ N> 2. Refer to the appropriate tabs in the code snippets section: **C# [Cross-pl
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Add-editable-range/.NET/Add-editable-range/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Create a Word document
 using (WordDocument document = new WordDocument())
 {
@@ -368,8 +368,6 @@ End Using
 By running the above code, you will generate a **Editable range** as shown below.
 ![Editable range](Security_images/EditableRangeInParagraph.png)
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Add-editable-range).
-
 ### Retrieve Id of an editable range
 
 You can retrieve the ID of an editable range using the **Id** property of the **EditableRange** class. 
@@ -378,7 +376,7 @@ The following code example illustrates how to retrieve the ID of an editable ran
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Retrieve-editable-range-id/.NET/Retrieve-editable-range-id/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Creates a Word document
 using (WordDocument document = new WordDocument())
 {
@@ -461,8 +459,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Retrieve-editable-range-id).
-
 ### Find an editable range
 
 You can find an editable range of specific id in the collection of editable ranges through **FindById** method of **EditableRangeCollection** class. 
@@ -471,7 +467,7 @@ The following code example illustrates how to find the editable range in a Word 
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Find-editable-range-by-id/.NET/Find-editable-range-by-id/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Loads an existing Word document
 using (FileStream fileStreamPath = new FileStream("Template.docx", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
 {
@@ -513,8 +509,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Find-editable-range-by-id).
-
 ### Remove an editable range
 
 You can remove an editable range using the **Remove** method of the **EditableRangeCollection** class.
@@ -523,7 +517,7 @@ The following code example demonstrates how to remove an editable range from a W
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Remove-editable-range/.NET/Remove-editable-range/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Loads an existing Word document
 using (FileStream fileStreamPath = new FileStream("Template.docx", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
 {    
@@ -624,8 +618,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Remove-editable-range-at-an-index).
-
 ### Editing permission
 You can restrict editable ranges to specific groups or individuals.
 
@@ -637,7 +629,7 @@ The following code example illustrates how to make an editable range available t
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Group-permission-for-editable-range/.NET/Group-permission-for-editable-range/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Creates a Word document
 using (WordDocument document = new WordDocument())
 {
@@ -723,8 +715,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Group-permission-for-editable-range).
-
 #### Single user permission
 
 Use the **SingleUser** property of the **EditableRange** class to make an editable range available to a single user for editing.
@@ -733,7 +723,7 @@ The following code example illustrates how to make an editable range available t
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Single-user-permission-for-editable-range/.NET/Single-user-permission-for-editable-range/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Creates a Word document
 using (WordDocument document = new WordDocument())
 {
@@ -819,8 +809,6 @@ End Using
 
 {% endtabs %}
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Single-user-permission-for-editable-range).
-
 ### Add editable range in a table
 
 Using the **FirstColumn** and **LastColumn** properties of the **EditableRange** class, you can specify the starting and ending columns of an editable range within a table.
@@ -829,7 +817,7 @@ The following code example illustrates how to add an editable range inside a tab
 
 {% tabs %}
 
-{% highlight c# tabtitle="C# [Cross-platform]" playgroundButtonLink="https://raw.githubusercontent.com/SyncfusionExamples/DocIO-Examples/main/Security/Add-editable-range-in-a-table/.NET/Add-editable-range-in-a-table/Program.cs" %}
+{% highlight c# tabtitle="C# [Cross-platform]" %}
 //Loads an existing Word document.
 using (WordDocument document = new WordDocument(Path.GetFullPath(@"Data/Template.docx")))
 {
@@ -918,7 +906,6 @@ End Using
 By running the above code, you will generate a **Editable range** as shown below.
 ![Editable range](Security_images/EditableRangeInTable.png)
 
-You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Add-editable-range-in-a-table).
 
 N> 1. Editable ranges are supported only in DOCX format.
 N> 2. The **SingleUser** and **EditorGroup** properties cannot be set simultaneously for the same editable range. Setting one will clear the other.
