@@ -920,7 +920,8 @@ By running the above code, you will generate a **Editable range** as shown below
 
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/DocIO-Examples/tree/main/Security/Add-editable-range-in-a-table).
 
-N> The **SingleUser** and **EditorGroup** properties cannot be set simultaneously for the same editable range. Setting one will clear the other.
+N> 1. Editable ranges are supported only in DOCX format.
+N> 2. The **SingleUser** and **EditorGroup** properties cannot be set simultaneously for the same editable range. Setting one will clear the other.
 
 ## Online Demo
 
