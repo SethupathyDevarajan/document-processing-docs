@@ -85,7 +85,7 @@ End Using
 {% endhighlight %}
 {% endtabs %}
 
-A complete working example of how to fill a date series in a worksheet using C# is present on [this GitHub page](https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/DateTime%20FillSeries).
+A complete working example of how to fill a date series in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/DateTime%20FillSeries">this GitHub page</a>.
 
 ## Number FillSeries
 
@@ -162,7 +162,7 @@ End Using
 {% endhighlight %}
 {% endtabs %}
 
-A complete working example of how to fill a number series in a worksheet using C# is present on [this GitHub page](https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/Number%20FillSeries).
+A complete working example of how to fill a number series in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/Number%20FillSeries">this GitHub page</a>.
 
 ## FillSeries by Enabling Trend
 
@@ -245,5 +245,5 @@ End Using
 {% endhighlight %}
 {% endtabs %}
 
-A complete working example of how to fill series by enabling trend in a worksheet using C# is present on [this GitHub page](https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/FillSeries%20by%20Enabling%20Trend).
+A complete working example of how to fill series by enabling trend in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/FillSeries%20by%20Enabling%20Trend">this GitHub page</a>.
 

@@ -100,4 +100,4 @@ End Using
 {% endhighlight %}
 {% endtabs %}
 
-A complete working example of how to autofill a series in a worksheet using C# is present on [this GitHub page](https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/AutoFill/.NET/AutoFill%20Using%20ExcelAutoFillType).
+A complete working example of how to autofill a series in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/AutoFill/.NET/AutoFill%20Using%20ExcelAutoFillType">this GitHub page</a>.
