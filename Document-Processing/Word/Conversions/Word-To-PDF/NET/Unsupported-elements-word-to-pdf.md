@@ -194,6 +194,14 @@ Gradient fill in Shapes
 Supported only in DOCX format. Rectangular and Path gradient types are not supported in PDF conversions in ASP.NET Core, Blazor, WinUI, .NET MAUI, and Xamarin platforms. These are currently rendered as Radial gradients.
 </td>
 </tr>
+<tr>
+<td>
+Metafile images (WMF, EMF)
+</td>
+<td>
+Supported. Text within WMF or EMF images is searchable in the converted PDF only when the image is not cropped, recolored, or made transparent.
+</td>
+</tr>
 </table>
 
 ## Detailed limitations
