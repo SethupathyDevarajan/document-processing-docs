@@ -453,8 +453,6 @@ graphics.DrawString("Encrypted document with AES-GCM 256bit", font, brush, new P
 
 //Get document security. 
 PdfSecurity security = document.Security; 
-
-
 //Specifies key size and encryption algorithm. 
 security.KeySize = PdfEncryptionKeySize.Key256Bit; 
 security.Algorithm = PdfEncryptionAlgorithm.AESGCM; 
