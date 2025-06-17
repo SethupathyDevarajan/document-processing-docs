@@ -1,5 +1,5 @@
 ---
-title: Fill Series in Excel Document | Syncfusion
+title: Fill Series | Syncfusion
 description: In this section, you can learn how to use the Fill Series feature in Excel using C# with the Syncfusion XlsIO library.
 platform: document-processing
 control: XlsIO
@@ -157,25 +157,27 @@ range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0);
 {% endhighlight %}
 
 {% highlight c# tabtitle="C# [Windows-specific]" %}
-//Assign value to the cell
-worksheet["A1"].Number = 1;
+//Assign values to the cells
+worksheet["A1"].Number = 2;
+worksheet["A2"].Number = 4;
 
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the growth option
-range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100);
+//Fill series using the auto fill option
+range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0);
 {% endhighlight %}
 
 {% highlight vb.net tabtitle="VB.NET [Windows-specific]" %}
 'Assign value to the cell
-worksheet("A1").Number = 1
+worksheet("A1").Number = 2
+worksheet("A2").Number = 4
 
 'Define the range
 Dim range As IRange = worksheet("A1:A100")
 
 'Fill series using the growth option
-range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100)
+range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0)
 {% endhighlight %}
 
 {% endtabs %}  
