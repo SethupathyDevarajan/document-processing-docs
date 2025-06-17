@@ -1,5 +1,5 @@
 ---
-title: Fill Series | Syncfusion
+title: Fill Series Feature in Excel | Syncfusion
 description: In this section, you can learn how to use the Fill Series feature in Excel using C# with the Syncfusion XlsIO library.
 platform: document-processing
 control: XlsIO
