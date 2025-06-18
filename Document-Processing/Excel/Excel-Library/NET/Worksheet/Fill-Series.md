@@ -14,39 +14,30 @@ The **Fill Series** feature in the XlsIO library allows users to programmaticall
 
 ### Linear
 
-The **Linear Fill Series** type generates a sequence of values with a constant step between each entry, based on the specified direction - row or column. Users can define both the step value and stop value to control the progression. When the Trend option is enabled, the step and stop values are ignored, and values are calculated based on linear regression.
+The **Linear** type generates a sequence of values with a constant step between each entry, based on the specified direction - row or column. Users can define both the step value and stop value to control the progression. When the Trend option is enabled, the step and stop values are ignored, and values are calculated based on linear regression.
 
 {% tabs %}  
 {% highlight c# tabtitle="C# [Cross-platform]" %}
-//Assign value to the cell
-worksheet["A1"].Number = 1;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the linear option
+//Fill series using the linear option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 1, 100);
 {% endhighlight %}
 
 {% highlight c# tabtitle="C# [Windows-specific]" %}
-//Assign value to the cell
-worksheet["A1"].Number = 1;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the linear option
+//Fill series using the linear option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 1, 100);
 {% endhighlight %}
 
 {% highlight vb.net tabtitle="VB.NET [Windows-specific]" %}
-'Assign value to the cell
-worksheet("A1").Number = 1
-
 'Define the range
 Dim range As IRange = worksheet("A1:A100")
 
-'Fill series using the linear option
+'Fill series using the linear option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 1, 100)
 {% endhighlight %}
 
@@ -54,39 +45,30 @@ range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 1, 100)
 
 ### Growth
 
-The **Growth Fill Series** type generates a sequence of values with a constant multiplication factor between each entry, based on the specified direction - row or column. Users can define both the step value (as a growth factor) and stop value to control the progression. When the Trend option is enabled, the step and stop values are ignored, and values are calculated based on exponential regression.
+The **Growth** type generates a sequence of values with a constant multiplication factor between each entry, based on the specified direction - row or column. Users can define both the step value (as a growth factor) and stop value to control the progression. When the Trend option is enabled, the step and stop values are ignored, and values are calculated based on exponential regression.
 
 {% tabs %}  
 {% highlight c# tabtitle="C# [Cross-platform]" %}
-//Assign value to the cell
-worksheet["A1"].Number = 1;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the growth option
+//Fill series using the growth option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100);
 {% endhighlight %}
 
 {% highlight c# tabtitle="C# [Windows-specific]" %}
-//Assign value to the cell
-worksheet["A1"].Number = 1;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the growth option
+//Fill series using the growth option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100);
 {% endhighlight %}
 
 {% highlight vb.net tabtitle="VB.NET [Windows-specific]" %}
-'Assign value to the cell
-worksheet("A1").Number = 1
-
 'Define the range
 Dim range As IRange = worksheet("A1:A100")
 
-'Fill series using the growth option
+'Fill series using the growth option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100)
 {% endhighlight %}
 
@@ -94,44 +76,32 @@ range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Growth, 2, 100)
 
 ### DateTime
 
-The **Days, Weekdays, Months, and Years Fill Series** options generate date sequences by incrementing the corresponding part of the date based on the specified direction (row or column). These types do not support the **Trend** option. They are useful for creating structured date progressions such as schedules, timelines, or calendars.
+The **Days, Weekdays, Months, and Years** options generate date sequences by incrementing the corresponding part of the date based on the specified direction (row or column). These types do not support the **Trend** option. They are useful for creating structured date progressions such as schedules, timelines, or calendars.
 
 #### Days
 
 {% tabs %}  
-{% highlight c# tabtitle="C# [Cross-platform]" %}
-//Assign date value to the cell
-worksheet.Range["A1"].NumberFormat = "m/d/yyyy";
-worksheet.Range["A1"].DateTime = new DateTime(2025, 1, 1);
-           
+{% highlight c# tabtitle="C# [Cross-platform]" %}         
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the days option
+//Fill series using the days option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Days, 2, new DateTime(2026, 1, 1));
 {% endhighlight %}
 
 {% highlight c# tabtitle="C# [Windows-specific]" %}
-//Assign date value to the cell
-worksheet.Range["A1"].NumberFormat = "m/d/yyyy";
-worksheet.Range["A1"].DateTime = new DateTime(2025, 1, 1);
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
-//Fill series using the days option
+//Fill series using the days option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Days, 2, new DateTime(2026, 1, 1));
 {% endhighlight %}
 
 {% highlight vb.net tabtitle="VB.NET [Windows-specific]" %}
-'Assign value to the cell
-worksheet.Range("A1").NumberFormat = "m/d/yyyy"
-worksheet.Range("A1").DateTime = New DateTime(2025, 1, 1)
-
 'Define the range
 Dim range As IRange = worksheet("A1:A100")
 
-'Fill series using the days option
+'Fill series using the days option, step value and stop value
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Days, 2, New DateTime(2026, 1, 1))
 {% endhighlight %}
 
@@ -145,10 +115,6 @@ The **Auto Fill** option automatically extends patterns from the source range in
 
 {% tabs %}  
 {% highlight c# tabtitle="C# [Cross-platform]" %}
-//Assign values to the cells
-worksheet["A1"].Number = 2;
-worksheet["A2"].Number = 4;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
@@ -157,10 +123,6 @@ range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0);
 {% endhighlight %}
 
 {% highlight c# tabtitle="C# [Windows-specific]" %}
-//Assign values to the cells
-worksheet["A1"].Number = 2;
-worksheet["A2"].Number = 4;
-
 //Define the range
 IRange range = worksheet["A1:A100"];
 
@@ -169,14 +131,10 @@ range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0);
 {% endhighlight %}
 
 {% highlight vb.net tabtitle="VB.NET [Windows-specific]" %}
-'Assign value to the cell
-worksheet("A1").Number = 2
-worksheet("A2").Number = 4
-
 'Define the range
 Dim range As IRange = worksheet("A1:A100")
 
-'Fill series using the growth option
+'Fill series using the auto fill option
 range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.AutoFill, 0, 0)
 {% endhighlight %}
 
@@ -201,7 +159,7 @@ using (ExcelEngine excelEngine = new ExcelEngine())
     //Define the range
     IRange range = worksheet["A1:A50"];
 
-    //Fill series using the years option
+    //Fill series using the years option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Years, 2, new DateTime(2100, 1, 1));
 
     //Saving the workbook 
@@ -227,7 +185,7 @@ using (ExcelEngine excelEngine = new ExcelEngine())
     //Define the range
     IRange range = worksheet["A1:A50"];
 
-    //Use FillSeries method to fill the values based on ExcelFillSeries
+    //Fill series using the years option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Years, 2, new DateTime(2100, 1, 1));
 
     //Saving the workbook
@@ -248,7 +206,7 @@ Using excelEngine As New ExcelEngine()
     'Define the range
     Dim range As IRange = worksheet("A1:A50")
 
-    'Use FillSeries method to fill the values based on ExcelFillSeries
+    'Fill series using the years option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Years, 2, New DateTime(2100, 1, 1))
 
     'Saving the workbook
@@ -259,7 +217,11 @@ End Using
 
 A complete working example of how to fill a date series in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/DateTimeFillSeries">this GitHub page</a>.
 
-## Number FillSeries
+By executing the program, you will get the Excel file as below
+
+![Fill Series](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img2.png)
+
+## Number Series
 
 The following code example illustrates how to fill a number series in a worksheet.
 
@@ -278,7 +240,7 @@ using (ExcelEngine excelEngine = new ExcelEngine())
     //Define the range
     IRange range = worksheet["A1:A100"];
 
-    //Fill series using the linear option
+    //Fill series using the linear option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 5, 1000);
 
     //Saving the workbook 
@@ -304,7 +266,7 @@ using (ExcelEngine excelEngine = new ExcelEngine())
     //Define the range
     IRange range = worksheet["A1:A100"];
 
-    //Fill series using the linear option
+    //Fill series using the linear option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 5, 1000);
 
     //Saving the workbook
@@ -325,7 +287,7 @@ Using excelEngine As New ExcelEngine()
     'Define the range
     Dim range As IRange = worksheet("A1:A100")
 
-    'Fill series using the linear option
+    'Fill series using the linear option, step value and stop value
     range.FillSeries(ExcelSeriesBy.Columns, ExcelFillSeries.Linear, 5, 1000)
 
     'Saving the workbook
@@ -336,7 +298,11 @@ End Using
 
 A complete working example of how to fill a number series in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/NumberFillSeries">this GitHub page</a>.
 
-## Fill series by enabling trend
+By executing the program, you will get the Excel file as below
+
+![Fill Series](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img3.png)
+
+## Trend
 
 The following code example illustrates how to fill series by enabling trend.
 
@@ -401,9 +367,9 @@ Using excelEngine As New ExcelEngine()
     Dim worksheet As IWorksheet = workbook.Worksheets(0)
 
     'Assign values to the cells
-    worksheet("A1").Number = 1
-    worksheet("A2").Number = 3
-    worksheet("A3").Number = 2
+    worksheet("A1").Number = 2
+    worksheet("A2").Number = 4
+    worksheet("A3").Number = 6
 
     'Define the range
     Dim range As IRange = worksheet("A1:A100")
@@ -418,4 +384,8 @@ End Using
 {% endtabs %}
 
 A complete working example of how to fill series by enabling trend in a worksheet using C# is present on <a href="https://github.com/SyncfusionExamples/XlsIO-Examples/tree/master/Worksheet%20Features/Fill%20Series/.NET/FillSeriesByEnablingTrend">this GitHub page</a>.
+
+By executing the program, you will get the Excel file as below
+
+![Fill Series](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img4.png)
 
