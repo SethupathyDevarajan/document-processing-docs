@@ -1817,9 +1817,9 @@ loadedDocument.Close(True)
 
 You can download a complete working sample from [GitHub](https://github.com/SyncfusionExamples/PDF-Examples/tree/master/Forms/Flatten-the-existing-form-fields-with-complex-script).
 
-## Auto naming of form fields
+## Grouping (auto naming) of form fields
 
-The Essential<sup>&reg;</sup> PDF supports auto naming of form fields in a PDF document while creating form fields with same name. The [FieldAutoNaming](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.Interactive.PdfForm.html#Syncfusion_Pdf_Interactive_PdfForm_FieldAutoNaming) property of [PdfForm](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.Interactive.PdfForm.html) is used to enable or disable auto naming of form field. 
+The Essential<sup>&reg;</sup> PDF supports grouping (auto naming) of form fields in a PDF document while creating form fields with same name. The [FieldAutoNaming](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.Interactive.PdfForm.html#Syncfusion_Pdf_Interactive_PdfForm_FieldAutoNaming) property of [PdfForm](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.Interactive.PdfForm.html) is used to enable or disable auto naming of form field. 
 
 While enabling this property, the field names are auto naming. If the fields are created using same/common name, the created fields will act as individual. 
 
