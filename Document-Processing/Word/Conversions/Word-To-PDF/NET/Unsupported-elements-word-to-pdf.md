@@ -62,7 +62,7 @@ Mathematical equations extending to multiple lines will be rendered in a single 
 SmartArt
 </td>
 <td>
-Supported only in DOCX format document to PDF. Additional behavior explained [here](https://help.syncfusion.com/document-processing/word/conversions/word-to-pdf/net/unsupported-elements-word-to-pdf#smartart).
+Supported only in DOCX format document to PDF. Additional behavior explained {{ '[here](https://help.syncfusion.com/document-processing/word/conversions/word-to-pdf/net/unsupported-elements-word-to-pdf#smartart)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -132,7 +132,7 @@ The Essential<sup>&reg;</sup> DocIO makes sensible decision when layout the text
 </tr>
 <tr>
 <td>
-Fit Text – Table cell
+Fit Text - Table cell
 </td>
 <td>
 Not supported
