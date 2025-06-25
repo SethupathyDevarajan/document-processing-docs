@@ -132,7 +132,7 @@ The Essential<sup>&reg;</sup> DocIO makes sensible decision when layout the text
 </tr>
 <tr>
 <td>
-Fit Text – Table cell
+Fit Text - Table cell
 </td>
 <td>
 Not supported
@@ -156,7 +156,7 @@ Using of patterns and 3D borders are not retained in the output image.
 </tr>
 <tr>
 <td>
-Break – Page break, column break and Line break
+Break - Page break, column break and Line break
 </td>
 <td>
 Text wrapping break is not supported.
