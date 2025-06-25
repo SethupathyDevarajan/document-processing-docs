@@ -1175,7 +1175,7 @@ Lists can organize and format the contents of a document in hierarchical way. Th
 * Numbered list
 * Bulleted list 
 
-For further information, click here.
+For further information, click [here](https://help.syncfusion.com/document-processing/word/word-library/net/working-with-lists).
 
 ## Working with hyperlinks
 
